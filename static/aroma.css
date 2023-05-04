@@ -1,0 +1,85 @@
+
+.custom-img-size {
+    width: auto; /* set width */
+    height: 200px; /* set height */
+    object-fit: scale-down; /* resize image to cover the container */
+}
+
+.bump-up {
+  animation: bump-up 0.1s ease-out;
+}
+
+.container {
+  margin-bottom: 80px; /* add margin to the bottom */
+  /* or */
+  padding-bottom: 80px; /* add padding to the bottom */
+}
+
+@keyframes bump-up {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-20px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.bump-down {
+  animation: bump-down 0.1s ease-out;
+}
+
+@keyframes bump-down {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(50px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(25px); }
+  100% { transform: translateY(0); }
+}
+
+
+.navbar {
+  box-shadow: 0px 20px 40px rgba(94, 93, 93, 0.5);
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav .nav-link {
+  color: #000000;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a4a7a9;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  outline: color ;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('your-icon.svg');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+}
+
+.navbar-nav .nav-item img {
+  height: 50px; /* set the desired height */
+  width: 50px; /* set the desired width */
+  object-fit: scale-down;
+}
